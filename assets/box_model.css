@@ -4,6 +4,20 @@ body {
   /* If the user cannot load the Arial font, the sans-serif font is used */
   font-family: Arial, sans-serif;
   background-color: #FEFFF1;
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap
+}
+
+
+
+header, footer {
+  display: flex;
+  margin-bottom: 40px;
+  flex: 100%;
+  height: 50px;
+  
 }
 
 h1 {
@@ -14,12 +28,34 @@ h2 {
   font-size: 32px;
 }
 
+section {
+  width: 700px;
+  background-color: yellow;
+}
+
+aside{
+  width: 180px;
+  display: flex;
+  margin-right: 15px;
+  flex-direction: column;
+
+  background-color: blue;
+
+}
+
 /* This selector selects ALL anchor tag children of ALL list elements that
 are children of an Unordered Lsit element */
 ul li a, figcaption a {
   text-decoration: none;
   color: inherit;
+  padding: 20px;
 }
+
+nav {
+  display: inline-block;
+
+} 
+
 
 /* This selector selects only IMMEDIATE (1 level deep) image element children
 of the header element */
